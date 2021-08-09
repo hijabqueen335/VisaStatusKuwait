@@ -1,0 +1,185 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminSite1.master.cs" Inherits="VisaStatusKuwait.Admin.AdminSite1" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visa Status Kuwait | Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dev Bhoomi Darshan">
+    <meta name="author" content="Dev Bhoomi Darshan">
+    <!-- The styles -->
+    <link href="AdminDesign/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="AdminDesign/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="AdminDesign/css/bootstrap-cerulean.min.css" rel="stylesheet">
+    <link href="AdminDesign/css/charisma-app.css" rel="stylesheet">
+    <link href='AdminDesign/css/jquery.noty.css' rel='stylesheet'>
+    <link href='AdminDesign/css/noty_theme_default.css' rel='stylesheet'>
+    <link href='AdminDesign/css/elfinder.min.css' rel='stylesheet'>
+    <link href='AdminDesign/css/elfinder.theme.css' rel='stylesheet'>
+    <link href='AdminDesign/css/jquery.iphone.toggle.css' rel='stylesheet'>
+    <link href='AdminDesign/css/uploadify.css' rel='stylesheet'>
+    <link href='AdminDesign/css/animate.min.css' rel='stylesheet'>
+    <!-- jQuery -->
+    <!-- The fav icon -->
+    <link rel="shortcut icon" href="../favicon.ico">
+</head>
+<body>
+    <form id="form" runat="server">
+        <!-- topbar starts -->
+        <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-inner">
+                <button type="button" class="navbar-toggle pull-left animated flip">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <b>Admin Home</b></a>
+                <!-- user dropdown starts -->
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                    <div class="pull-right">
+                        <div id="lgdiv" runat="server">
+                            <ul>
+                                <%--<li><a id="loginLink" class="btn btn-sm btn-success" runat="server" href="~/Member/Login.aspx">Log in</a></li>--%>
+                            </ul>
+                        </div>
+                        <div id="userdiv" runat="server">
+                            <p>
+                              <%--  Hello, <a id="A1" runat="server" class="username" href="#" title="Manage your account">
+                                    <asp:LoginName ID="LoginName1" runat="server" CssClass="navbar-link" />
+                                </a>!
+                                <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="Redirect" LogoutText="Log off" CssClass="btn btn-sm btn-danger" LogoutPageUrl="~/" />--%>
+                            </p>
+                        </div>
+                    </div>
+                </asp:ContentPlaceHolder>
+                <!-- user dropdown ends -->
+            </div>
+        </div>
+        <!-- topbar ends -->
+        <div class="ch-container">
+            <div class="row">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    <!-- left menu starts -->
+                    <div class="col-sm-2 col-lg-2">
+                        <div class="sidebar-nav">
+                            <div class="nav-canvas">
+                                <div class="nav-sm nav nav-stacked">
+                                </div>
+                                <ul class="nav nav-pills nav-stacked main-menu">
+                                    <li class="nav-header">Main</li>
+                                    <li><a class="ajax-link" href="Home.aspx"><i class="glyphicon glyphicon-home"></i><span>Home</span></a>
+                                    </li>
+                                    
+                                   
+                                    
+                                    <li class="accordion">
+                                        <a href="#"><i class="glyphicon glyphicon-briefcase"></i><span>Booking Orders</span> </a>
+                                        <ul class="nav nav-pills nav-stacked">
+                                            <li><a href="ChangePassword.aspx">Change Password</a></li>
+                                            <li><a href="#">Contact Inquiry</a></li>
+                                            <li><a href="VisaUplaod.aspx">Uplaod Visa</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="ajax-link" href="../AdminLogin.aspx"><i class="glyphicon glyphicon-log-out"></i><span>Logout</span></a>
+                                    </li>
+                               </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/span-->
+                    <!-- left menu ends -->
+                </asp:ContentPlaceHolder>
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <div id="content" class="col-lg-10 col-sm-10">
+                        <!-- content starts -->
+                        <div>
+                            <ul class="breadcrumb">
+                                <li>
+                                    <a href="Home.aspx">Home</a>
+                                </li>
+                                <li>
+                                    <a href="Home.aspx">Dashboard</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="box col-md-12">
+                                <div class="box-inner">
+                                    <div class="box-header well">
+                                        <h2><i class="glyphicon glyphicon-info-sign"></i>Introduction</h2>
+                                        <div class="box-icon">
+                                            <a href="#" class="btn btn-setting btn-round btn-default"><i
+                                                class="glyphicon glyphicon-cog"></i></a>
+                                            <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                                class="glyphicon glyphicon-chevron-up"></i></a>
+                                            <a href="#" class="btn btn-close btn-round btn-default"><i
+                                                class="glyphicon glyphicon-remove"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="box-content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- content ends -->
+                    </div>
+                    <!--/#content.col-md-0-->
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+               </asp:ContentPlaceHolder>
+            </div>
+            <!--/fluid-row-->
+            <div class="row">
+                <br />
+                <div class="alert alert-info">&nbsp;</div>
+            </div>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"  aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                            <h3>Settings</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p>Here settings can be configured...</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+                            <a href="#" class="btn btn-primary" data-dismiss="modal">Save changes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="clearfix"></div>
+            <footer class="row">
+                <p class="col-md-9 col-sm-9 col-xs-12 copyright">
+                    &copy; <a href="#" target="_blank"> Garg Manufacturers</a> <%=DateTime.Now.Year %>
+                </p>
+            </footer>
+        </div>
+        <!--/.fluid-container-->
+        <script src="AdminDesign/js/jquery.min.js" type="text/javascript"></script>
+        <script src="AdminDesign/js/bootstrap.js" type="text/javascript"></script>
+        <script src="AdminDesign/js/jquery.cookie.js"></script>
+        <!-- calender plugin -->
+        <script src='AdminDesign/js/jquery.dataTables.min.js'></script>
+        <script src="AdminDesign/js/jquery.noty.js"></script>
+        <!-- library for making tables responsive -->
+        <script src="AdminDesign/js/jquery.raty.min.js"></script>
+        <!-- for iOS style toggle switch -->
+        <script src="AdminDesign/js/jquery.iphone.toggle.js"></script>
+        <!-- autogrowing textarea plugin -->
+        <script src="AdminDesign/js/jquery.autogrow-textarea.js"></script>
+        <!-- multiple file upload plugin -->
+        <script src="AdminDesign/js/jquery.uploadify-3.1.min.js"></script>
+        <!-- history.js for cross-browser state change on ajax -->
+        <script src="AdminDesign/js/jquery.history.js"></script>
+        <!-- application script for Charisma demo -->
+        <script src="AdminDesign/js/charisma.js"></script>
+    </form>
+</body>
+</html>

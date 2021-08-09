@@ -1,0 +1,590 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="VisaStatusKuwait.Site1" %>
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Visa Status Kuwait</title>
+<!-- Bootstrap stylesheet -->
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<!-- font -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900%7CPT+Serif:400,400i,700,700i" rel="stylesheet"> 
+<link href="css/ele-style.css" rel="stylesheet" type="text/css"/>
+<!-- stylesheet -->
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link href="css/responsive.css" rel="stylesheet" type="text/css"/>
+<!-- font-awesome -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<!-- crousel css -->
+<link href="js/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
+<!--bootstrap select-->
+<link href="js/dist/css/bootstrap-select.css" rel="stylesheet" type="text/css" />
+<link href="js/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+	<style>
+div.fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 300px;
+  
+}
+</style>
+</head>
+<body>
+<!-- top start here -->
+	<%--<div id="top">
+		<div class="container">
+			<div id="top-links" class="nav">
+				<ul class="list-inline pull-left">
+					<li>
+						<a href="#">Welcome to Dev Bhoomi Darshan</a>
+					</li>
+					<li><a href="#">Email : info@devbhoomidarshanuk.com</a></li>
+				</ul>
+				
+				<ul class="list-inline pull-right button">
+					<li><a href="login.html">Login</a>
+						<a href="register.html">Register</a>
+					</li>
+					<li><a href="my_account_wishlist.html"><i class="icon_heart"></i>Wishlist</a></li>
+					<li><a href="shoppingcart.html"><i class="icon_cart"></i>Cart</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>--%>
+<!-- top end here -->
+	
+<!-- header start here-->
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-md-4 col-xs-12">
+					<div id="logo">
+						<a href="Default.aspx"><img style="width:50%; height:30%"  src="img/visalogo.png" alt="Visa Status Kuwait" class="img-responsive" title="Visa Status Kuwait" /></a>
+				
+					</div>
+				</div>
+				
+			    <div class="col-sm-4 col-md-4 col-xs-12">
+					
+				<h1 style="text-align:center;padding-top:50px"><strong><b><span style="font-family:'Edwardian Script ITC';font-size:50px;  text-align:center; color:darkblue">Visa Status Kuwait</span></b></strong></h1>
+
+				</div>
+			    <div class="col-sm-1 col-md-1 col-xs-12 text-center">
+					
+				</div>
+			</div>
+		</div>
+	</header>
+<!-- header end here -->
+
+<!-- menu start here -->
+	<div id="menu">	
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-xs-12">
+					<nav class="navbar">
+						<div class="navbar-header">
+							<span class="menutext visible-xs">Menu</span>
+							<button data-target=".navbar-ex1-collapse" data-toggle="collapse" class="btn btn-navbar navbar-toggle" type="button"><i class="fa fa-bars" aria-hidden="true"></i></button>
+						</div>
+						<div class="collapse navbar-collapse navbar-ex1-collapse padd0">
+							<ul class="nav navbar-nav">
+								<li><a href="Default.aspx">Home</a></li>
+								<li><a href="AboutUs.aspx">About Us</a></li>
+									<%-- <ul class="dropdown-menu">
+										<li><a href="AboutUs.aspx"><i class="fa fa-angle-right" aria-hidden="true"></i>About Us</a></li>
+										
+									</ul>--%>
+								
+								<!--<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Tour Packages</a>
+									<ul class="dropdown-menu">
+										<li><a href="Char-Dham.aspx"><i class="fa fa-angle-right" aria-hidden="true"></i>CHAR DHAM</a></li>
+										<li><a href="Do-Dham.aspx"><i class="fa fa-angle-right" aria-hidden="true"></i>DO DHAM</a></li>
+										<li><a href="Chopta-Chandrashila-Trek.aspx"><i class="fa fa-angle-right" aria-hidden="true"></i>Chopta Chandrashila Trek</a></li>
+									</ul>
+								</li>-->
+								<li><a href="VisaStatus.aspx">Visa Status</a></li>
+								<%-- <li><a href="#"></a></li>--%>
+								<li><a href="ContactUs.aspx">Contact Us</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- menu end here -->
+
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+<!-- slider start here -->
+<div class="slice">
+	<div class="slideshow owl-carousel">
+		<div class="item">
+			<img src="img/k1.jpg" alt="banner1" title="banner1" class="img-responsive" />
+		</div>
+		<div class="item">
+			<img src="img/k2.jpg" alt="banner1" title="banner1" class="img-responsive" />
+		</div>
+		<div class="item">
+			<img src="img/k3.jpg" alt="banner1" title="banner1" class="img-responsive" />
+		</div>
+		<div class="item">
+			<img src="img/k4.jpg" alt="banner1" title="banner1" class="img-responsive" />
+		</div>
+		<div class="item">
+			<img src="images/k5.jpg" alt="banner1" title="banner1" class="img-responsive" />
+		</div>
+		<%--<div class="item">
+			<img src="images/banner1.jpg" alt="banner1" title="banner1" class="img-responsive" />
+		</div>
+		<div class="item">
+			<img src="images/banner1.jpg" alt="banner1" title="banner1" class="img-responsive" />
+		</div>--%>
+	</div>
+	</div>
+	<!-- slide-detail start here -->
+	<div class="slide-detail">
+		<div class="container">
+			<%--<div class="matter">
+				<p><span>Go Travel</span> is here to make<br> your <span>destination dreams</span> reachable</p>
+			</div>--%>
+			<%--<form class="form-horizontal" method="post">
+				<div class="form-group">
+					<div class="col-sm-2 wid">
+						<h2>Where</h2>
+						<label>Destination</label>
+						<input name="s" class="form-control" value="" placeholder="Enter a destination or tour type.." type="text">
+					</div>
+							
+					<div class="col-sm-10 wid1">
+						<h2>When</h2>
+						<div class="col-sm-2 paddleft wid date">
+							<label>From</label>
+							<input name="s" class="form-control" value="" placeholder="dd/mm/yy" type="text">
+							<button type="button" class="calender"><i class="fa fa-calendar-o" aria-hidden="true"></i></button>
+						</div>
+						<div class="col-sm-2 wid date padd-left">
+							<label>To</label>
+							<input name="s" class="form-control" value="" placeholder="dd/mm/yy" type="text">
+							<button type="button" class="calender"><i class="fa fa-calendar-o" aria-hidden="true"></i></button>
+						</div>
+						<div class="col-sm-2 wid padd-left">
+							<label>Trip Type</label>
+							<select class="selectpicker form-control" name=	"location">
+								<option value="1">Trip Type</option>
+								<option value="0">Location 1</option>
+								<option value="0">Location 2</option>
+								<option value="0">Location 3</option>
+							</select>
+						</div>
+						
+						<div class="col-sm-3 wid2 padd-left">
+							<button class="btn-primary" type="button">Search Tours</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>	 --%>
+	<!-- slide-detail end here -->
+</div>
+		</div>
+<!-- slider end here -->	
+
+<!-- places start here -->
+<div class="placetop">
+	<div class="container">
+		<div class="row">
+			<div class="places">
+				<h1>Overview :</h1>
+				<p>
+					Uttarakhand formerly known as Uttaranchal is a state in the northern part of India. 
+						It is often referred to as the "Devabhumi" (<i>literally</i> <strong>"Land of the Gods"</strong>)
+						due to numerous <strong>Hindu temples</strong> and <strong>pilgrimage centres</strong> found throughout the state.
+						Uttarakhand is known for the natural environment of the <strong><i>Himalayas</i></strong>, 
+						the Bhabar and the Terai regions.</p>
+				<h1>Our Tour Packages :</h1>
+				<hr>
+				
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane active" id="all">
+					<div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+						<h3>CHAR DHAM</h3>
+						<div class="product-thumb">
+							<div class="image">
+								<a href="#"><img src="img/Chardham.png" alt="p1" title="p1" class="img-responsive" /></a>
+								<div class="hoverbox">
+									<!--<div class="icon_plus" aria-hidden="true"></div>-->
+								</div>
+								<%--<div class="matter">
+									<h2>New York city</h2>
+									<p>start from $375.00</p>
+									<ul class="list-inline">
+										<li><a href="#">top rates</a></li>
+										<li><a href="#">hotels deals </a></li>
+									</ul>
+								</div>--%>
+							</div>
+							<div class="caption">
+								
+								<div class="inner">
+									
+									<img src="images/icon-map.png" class="img-responsive" title="map" alt="map" />
+									<h5><b>CHAR DHAM</b> (Kedarnath, Badrinath, Gangotri, Yamunotri)</h5>
+									</div>
+									<div class="inner">
+									<p style="text-align:center;"><strong>CHAR DHAM TOUR -</strong> CHARDHAM TOUR PACKAGE BY ROAD ( FROM DEHRADUN AIRPORT / HARIDWAR) <br /> Rs 21999/ PER PERSON ( MIN 4 PAX )
+<br /><b>9 Nights 10 days Tour</b> <br />Ex Dehradun Airport / Haridwar</p>
+								</div>
+								
+								<div class="text-center">
+									<button type="button" onclick="location.href='tour-grid-view.html'">View More <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+								</div>	
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+						<h3>DO DHAM</h3>
+						<div class="product-thumb">
+							<div class="image">
+								<a href="#"><img src="img/DoDham.png" alt="p2" title="p2" class="img-responsive" /></a>
+								<div class="hoverbox">
+									<div class="icon_plus" aria-hidden="true"></div>
+								</div>
+								
+							</div>
+							<div class="caption">
+								<div class="inner">
+									<img src="images/icon-map.png" class="img-responsive" title="map" alt="map" />
+									<h5><b>DO DHAM</b> (Kedarnath & Badrinath)</h5>
+									
+								</div>
+								<div class="inner">
+									
+									<p style="text-align:center"><strong>DO DHAM TOUR -</strong> PACKAGE BY ROAD ( FROM DEHRADUN AIRPORT / HARIDWAR) <br /> Rs 14999/ PER PERSON ( MIN 4 PAX )
+<br /><b>5 Nights 6 days Tour</b> Ex Dehradun Airport / Haridwar</p>
+									
+								</div>
+								<div class="text-center">
+									<button type="button" onclick="location.href='tour-grid-view.html'">View More <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+								</div>	
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+						<h3>Chopta Chandrashila Trek</h3>
+						<div class="product-thumb">
+							<div class="image">
+								<a href="#"><img src="img/trek1.png" alt="p2" title="p2" class="img-responsive" /></a>
+								<div class="hoverbox">
+									<div class="icon_plus" aria-hidden="true"></div>
+								</div>
+								
+							</div>
+							<div class="caption">
+								<div class="inner">
+									<img src="images/icon-map.png" class="img-responsive" title="map" alt="map" />
+									<h5><b>Chopta Chandrashila Trek</b> (Mini Switzerland)</h5>
+									
+								</div>
+								<div class="inner">
+									
+									<p style="text-align:center"><strong>The Chopta – Tungnath – Chandrashila trek TOUR -</strong><br /> (<b>2Nights 3 days Tour</b> Ex Dehradun Airport / Haridwar 4PAX )<br /> MIN 4 PAX <br />
+										7999/ PER PERSON</p>
+									
+								</div>
+								<div class="text-center">
+									<button type="button" onclick="location.href='tour-grid-view.html'">View More <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+								</div>	
+							</div>
+						</div>
+					</div>
+
+					
+					
+					
+					
+				</div>
+				
+				
+				
+				
+				<div class="text-center">
+					<button class="btn-primary" type="button" '">View More <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+<!-- places end here -->
+
+
+<!-- video start here -->
+<div class="video">
+	<img src="img/videobg.png" class="img-responsive" alt="video-bg" title="video-bg" />
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="matter text-center">
+				<%--	<i class="#" aria-hidden="true"></i>--%>
+					<p style="color:white; font-size:xx-large">Special Tour Packages  with Chardham Yatra. </p>
+					<p style="color:gold ; font-size:xx-large; background-color:red"><b>We offer Char Dham Tour Packages for Kedarnath, Badrinath, Gangotri and Yamunotri.</b></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- video end here -->
+
+
+<!-- categories start here -->
+<div class="placetop">
+	<div class="container">
+		<div class="row">
+			<div class="places">
+				<h1>Daily Route Taxi</h1>
+					<hr>
+				
+			</div>
+			<div class="tab-content tour">
+				<div class="tab-pane active" style="text-align:center" id="hotels">
+					<div class="col-md-12 col-lg-12 col-sm-6 col-xs-12 ">
+						<div class="product-thumb">
+							<div class="image">
+								<a href="#"><img src="img/taxi.PNG" alt="t1" title="t1" class="img-responsive" /></a>
+							
+							</div>
+							
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="text-center">
+					<a href="ContactUs.aspx" class="btn-primary" >Contact Us <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+<!-- categories end here -->
+
+
+<!-- testimonail start here -->
+<div class="testimonail">
+	<div class="container">
+		<div class="row">
+			<div class="places">
+				<h1>what travelers are saying</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a suscipit quam, ut vestibulum lorem.</p>
+				<hr>
+			</div>
+			<div class="testimonails owl-carousel">
+				<div class="item">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="box">
+							<img src="images/pic1.png" alt="pic1" title="pic1" class="img-responsive" />
+							<div class="caption">
+								<h4>John William</h4>
+								<div class="rate">
+									<div class="pull-right">
+										<span>FROM CANADA</span>
+									</div>
+									<div class="pull-left">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+								</div>
+								<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus suscipit malesuada. Cras nec hendrerit lacus. Curabitur nec elementum justo. Sed vitae dapibus augue."</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="item">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="box">
+							<img src="images/pic2.png" alt="pic2" title="pic2" class="img-responsive" />
+							<div class="caption">
+								<h4>John William</h4>
+								<div class="rate">
+									<div class="pull-right">
+										<span>FROM CANADA</span>
+									</div>
+									<div class="pull-left">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+								</div>
+								<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus suscipit malesuada. Cras nec hendrerit lacus. Curabitur nec elementum justo. Sed vitae dapibus augue."</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="item">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="box">
+							<img src="images/pic1.png" alt="pic1" title="pic1" class="img-responsive" />
+							<div class="caption">
+								<h4>John William</h4>
+								<div class="rate">
+									<div class="pull-right">
+										<span>FROM CANADA</span>
+									</div>
+									<div class="pull-left">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+								</div>
+								<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus suscipit malesuada. Cras nec hendrerit lacus. Curabitur nec elementum justo. Sed vitae dapibus augue."</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="item">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="box">
+							<img src="images/pic2.png" alt="pic2" title="pic2" class="img-responsive" />
+							<div class="caption">
+								<h4>John William</h4>
+								<div class="rate">
+									<div class="pull-right">
+										<span>FROM CANADA</span>
+									</div>
+									<div class="pull-left">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+								</div>
+								<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus suscipit malesuada. Cras nec hendrerit lacus. Curabitur nec elementum justo. Sed vitae dapibus augue."</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>	
+<!-- testimonail end here -->
+
+
+
+</asp:ContentPlaceHolder>
+
+
+<!-- footer start here -->
+<footer>
+	<div class="container">
+		<div class="row padd-b">
+			<div class="col-sm-4">
+				<img src="img/visalogo.png" style="width:50%; height:50%" alt="foot-logo" class="img-responsive" title="foot-logo" />
+				
+				<p class="des">Explore your dreams in Kuwait with a Greate and Perfact Job....Because You deserve a best job</p>
+			</div>
+			<div class="col-sm-5 contact">
+				<h3>Contact us</h3>
+				<ul class="list-inline">
+					<li>
+						<div class="inner"><i class="fa fa-home" aria-hidden="true"></i> Address</div>
+						<div class="in"><a href="#"> : 3/70, Viram Khand 3, Gomti Nagar,Lucknow - 226010</a></div>
+					</li>
+					<li>
+						<div class="inner"><i class="fa fa-phone" aria-hidden="true"></i>Phone No.</div>
+						<div class="in"><a href="#"> : (+91)700 772 2785, (+91)522 351 8129</a></div>
+					</li>
+					<li>
+						<div class="inner"><i class="fa fa-envelope" aria-hidden="true"></i>Email</div>
+						<div class="in"><a href="#"> : srenterprisesamit@gmail.com</a></div>
+						<br>
+						<div class="inner paddleft">website</div>
+						<div class="in"><a href="#">  : www.srenterprisestourtravel.com</a></div>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-3 info">
+				<h3>Information</h3>
+				<ul class="list-inline">
+					<li><a href="Default.aspx"><i class="fa fa-angle-right" aria-hidden="true"></i>Home</a></li>
+					<!--<li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>My Account</a></li>-->
+					<li><a href="AboutUs.aspx"><i class="fa fa-angle-right" aria-hidden="true"></i>About</a></li>
+					<li><a href="Packages-Name.aspx"><i class="fa fa-angle-right" aria-hidden="true"></i>About Kuwait</a></li>
+					<li><a href="Gallery.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Gallery</a></li>
+					<li><a href="Daily-Taxi.aspx"><i class="fa fa-angle-right" aria-hidden="true"></i>Visa Status</a></li>
+					<li><a href="ContactUs.aspx"><i class="fa fa-angle-right" aria-hidden="true"></i>Contact Us</a></li>
+					<!--<li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Best Places</a></li>-->
+					<!--<li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Blog</a></li>-->
+				</ul>
+			</div>
+			
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="powered">
+					<div class="col-sm-6 padd0">
+						<p>© Copyright 2021. <span>Visa Status Kuwait </span> by <a target="_blank" href="#">Garg Manufacturers</a> </p>
+					</div>
+					<div class="col-sm-6 padd0 text-right">
+						<div class="social-icon">
+							<ul class="list-inline">
+								<li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a href="https://plus.google.com/" target="_blank"><i class="social_googleplus" aria-hidden="true"></i></a></li>
+								<li><a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="https://in.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+								<li><a href="https://photos.google.com/" target="_blank"><i class="social_picassa"></i></a></li>
+								<li><a href="https://www.youtube.com/?gl=IN" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- footer end here -->
+
+<!-- jquery -->
+<script src="js/jquery.2.1.1.min.js"></script>
+<!-- bootstrap js -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!--bootstrap select-->
+<script src="js/dist/js/bootstrap-select.js"></script>
+<!-- owlcarousel js -->
+<script src="js/owl-carousel/owl.carousel.min.js"></script>
+<!--internal js-->
+<script src="js/internal.js"></script>
+<!--date js-->
+<script src="js/datetimepicker/moment.js"></script>
+<script src="js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+
+
+
+</body>
+
+</html>

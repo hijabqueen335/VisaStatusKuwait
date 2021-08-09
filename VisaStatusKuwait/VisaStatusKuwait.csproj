@@ -1,0 +1,616 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB45BF8B-FD87-4EFE-B2EE-DC0338AE11FA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VisaStatusKuwait</RootNamespace>
+    <AssemblyName>VisaStatusKuwait</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AboutUs.aspx" />
+    <Content Include="AdminLogin.aspx" />
+    <Content Include="Admin\AdminDesign\css\animate.min.css" />
+    <Content Include="Admin\AdminDesign\css\bootstrap-cerulean.min.css" />
+    <Content Include="Admin\AdminDesign\css\bootstrap-cyborg.min.css" />
+    <Content Include="Admin\AdminDesign\css\bootstrap-darkly.min.css" />
+    <Content Include="Admin\AdminDesign\css\bootstrap-lumen.min.css" />
+    <Content Include="Admin\AdminDesign\css\bootstrap-simplex.min.css" />
+    <Content Include="Admin\AdminDesign\css\bootstrap-slate.min.css" />
+    <Content Include="Admin\AdminDesign\css\bootstrap-spacelab.min.css" />
+    <Content Include="Admin\AdminDesign\css\bootstrap-united.min.css" />
+    <Content Include="Admin\AdminDesign\css\bootstrap.css" />
+    <Content Include="Admin\AdminDesign\css\bootstrap.min.css" />
+    <Content Include="Admin\AdminDesign\css\charisma-app.css" />
+    <Content Include="Admin\AdminDesign\css\elfinder.min.css" />
+    <Content Include="Admin\AdminDesign\css\elfinder.theme.css" />
+    <Content Include="Admin\AdminDesign\css\jquery-ui-1.8.21.custom.css" />
+    <Content Include="Admin\AdminDesign\css\jquery.iphone.toggle.css" />
+    <Content Include="Admin\AdminDesign\css\jquery.noty.css" />
+    <Content Include="Admin\AdminDesign\css\noty_theme_default.css" />
+    <Content Include="Admin\AdminDesign\css\uploadify.css" />
+    <Content Include="Admin\AdminDesign\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Admin\AdminDesign\img\ajax-loaders\ajax-loader-1.gif" />
+    <Content Include="Admin\AdminDesign\img\ajax-loaders\ajax-loader-2.gif" />
+    <Content Include="Admin\AdminDesign\img\ajax-loaders\ajax-loader-3.gif" />
+    <Content Include="Admin\AdminDesign\img\ajax-loaders\ajax-loader-4.gif" />
+    <Content Include="Admin\AdminDesign\img\ajax-loaders\ajax-loader-5.gif" />
+    <Content Include="Admin\AdminDesign\img\ajax-loaders\ajax-loader-6.gif" />
+    <Content Include="Admin\AdminDesign\img\ajax-loaders\ajax-loader-7.gif" />
+    <Content Include="Admin\AdminDesign\img\ajax-loaders\ajax-loader-8.gif" />
+    <Content Include="Admin\AdminDesign\img\iphone-style-checkboxes\off.png" />
+    <Content Include="Admin\AdminDesign\img\iphone-style-checkboxes\on.png" />
+    <Content Include="Admin\AdminDesign\img\iphone-style-checkboxes\slider.png" />
+    <Content Include="Admin\AdminDesign\img\iphone-style-checkboxes\slider_center.png" />
+    <Content Include="Admin\AdminDesign\img\iphone-style-checkboxes\slider_left.png" />
+    <Content Include="Admin\AdminDesign\img\iphone-style-checkboxes\slider_right.png" />
+    <Content Include="Admin\AdminDesign\img\logo.png" />
+    <Content Include="Admin\AdminDesign\img\logo20.png" />
+    <Content Include="Admin\AdminDesign\img\star-half.png" />
+    <Content Include="Admin\AdminDesign\img\star-off.png" />
+    <Content Include="Admin\AdminDesign\img\star-on.png" />
+    <Content Include="Admin\AdminDesign\img\thumb.png" />
+    <Content Include="Admin\AdminDesign\img\uploadify-cancel.png" />
+    <Content Include="Admin\AdminDesign\js\bootstrap.js" />
+    <Content Include="Admin\AdminDesign\js\bootstrap.min.js" />
+    <Content Include="Admin\AdminDesign\js\charisma.js" />
+    <Content Include="Admin\AdminDesign\js\init-chart.js" />
+    <Content Include="Admin\AdminDesign\js\jquery.autogrow-textarea.js" />
+    <Content Include="Admin\AdminDesign\js\jquery.cookie.js" />
+    <Content Include="Admin\AdminDesign\js\jquery.dataTables.min.js" />
+    <Content Include="Admin\AdminDesign\js\jquery.history.js" />
+    <Content Include="Admin\AdminDesign\js\jquery.iphone.toggle.js" />
+    <Content Include="Admin\AdminDesign\js\jquery.min.js" />
+    <Content Include="Admin\AdminDesign\js\jquery.noty.js" />
+    <Content Include="Admin\AdminDesign\js\jquery.raty.min.js" />
+    <Content Include="Admin\AdminDesign\js\jquery.uploadify-3.1.min.js" />
+    <Content Include="Admin\ChangePassword.aspx" />
+    <Content Include="Admin\Contact-Enquiry.aspx" />
+    <Content Include="Admin\Home.aspx" />
+    <Content Include="Admin\img\user-png-12.png" />
+    <Content Include="Admin\VisaUplaod.aspx" />
+    <Content Include="bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="css\ele-style.css" />
+    <Content Include="css\fonts\ElegantIcons-2.html" />
+    <Content Include="css\fonts\ElegantIcons-3.html" />
+    <Content Include="css\fonts\ElegantIcons-4.html" />
+    <Content Include="css\fonts\ElegantIcons.html" />
+    <Content Include="css\fonts\ElegantIconsd41d.html" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="font-awesome\css\font-awesome.min.css" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont914c.svg" />
+    <Content Include="images\about\bg.jpg" />
+    <Content Include="images\about\icon1.png" />
+    <Content Include="images\about\icon2.png" />
+    <Content Include="images\about\icon3.png" />
+    <Content Include="images\about\icon4.png" />
+    <Content Include="images\about\image1.jpg" />
+    <Content Include="images\about\image2.jpg" />
+    <Content Include="images\about\image3.jpg" />
+    <Content Include="images\about\img4.jpg" />
+    <Content Include="images\about\img5.jpg" />
+    <Content Include="images\about\img6.jpg" />
+    <Content Include="images\about\img7.jpg" />
+    <Content Include="images\about\img8.jpg" />
+    <Content Include="images\about\img9.jpg" />
+    <Content Include="images\account\flight.png" />
+    <Content Include="images\account\flight1.png" />
+    <Content Include="images\account\hotel.png" />
+    <Content Include="images\account\hotel1.png" />
+    <Content Include="images\account\packages.png" />
+    <Content Include="images\account\packages1.png" />
+    <Content Include="images\account\profile.jpg" />
+    <Content Include="images\account\tour.png" />
+    <Content Include="images\account\tour1.png" />
+    <Content Include="images\amenities\01.png" />
+    <Content Include="images\amenities\02.png" />
+    <Content Include="images\amenities\03.png" />
+    <Content Include="images\amenities\04.png" />
+    <Content Include="images\amenities\05.png" />
+    <Content Include="images\amenities\06.png" />
+    <Content Include="images\amenities\07.png" />
+    <Content Include="images\amenities\08.png" />
+    <Content Include="images\amenities\09.png" />
+    <Content Include="images\amenities\10.png" />
+    <Content Include="images\amenities\11.png" />
+    <Content Include="images\amenities\12.png" />
+    <Content Include="images\amenities\13.png" />
+    <Content Include="images\amenities\14.png" />
+    <Content Include="images\amenities\15.png" />
+    <Content Include="images\amenities\16.png" />
+    <Content Include="images\amenities\17.png" />
+    <Content Include="images\amenities\18.png" />
+    <Content Include="images\amenities\19.png" />
+    <Content Include="images\amenities\20.png" />
+    <Content Include="images\amenities\21.png" />
+    <Content Include="images\amenities\22.png" />
+    <Content Include="images\amenities\23.png" />
+    <Content Include="images\amenities\24.png" />
+    <Content Include="images\b1.png" />
+    <Content Include="images\b2.png" />
+    <Content Include="images\b3.png" />
+    <Content Include="images\banner-bg.jpg" />
+    <Content Include="images\banner-left.jpg" />
+    <Content Include="images\banner.jpg" />
+    <Content Include="images\banner1.jpg" />
+    <Content Include="images\banner4.jpg" />
+    <Content Include="images\bg-image.jpg" />
+    <Content Include="images\bg-image1.jpg" />
+    <Content Include="images\bg\bg1.jpg" />
+    <Content Include="images\bg\bg2.jpg" />
+    <Content Include="images\bg\bg3.jpg" />
+    <Content Include="images\bg\bg4.jpg" />
+    <Content Include="images\Big_imaget.jpg" />
+    <Content Include="images\blog1.jpg" />
+    <Content Include="images\blog2.jpg" />
+    <Content Include="images\blog3.jpg" />
+    <Content Include="images\blog\img1.jpg" />
+    <Content Include="images\blog\img2.jpg" />
+    <Content Include="images\blog\img3.jpg" />
+    <Content Include="images\blog\img4.jpg" />
+    <Content Include="images\blog\img5.jpg" />
+    <Content Include="images\blog\pic1.png" />
+    <Content Include="images\blog\pic2.png" />
+    <Content Include="images\c01.jpg" />
+    <Content Include="images\c02.jpg" />
+    <Content Include="images\c03.jpg" />
+    <Content Include="images\check.png" />
+    <Content Include="images\country-icons\c1.png" />
+    <Content Include="images\country-icons\c1_w.png" />
+    <Content Include="images\country-icons\c2.png" />
+    <Content Include="images\country-icons\c2_w.png" />
+    <Content Include="images\country-icons\c3.png" />
+    <Content Include="images\country-icons\c3_w.png" />
+    <Content Include="images\country-icons\c4.png" />
+    <Content Include="images\country-icons\c4_w.png" />
+    <Content Include="images\country-icons\c5.png" />
+    <Content Include="images\country-icons\c5_w.png" />
+    <Content Include="images\country-icons\c6.png" />
+    <Content Include="images\country-icons\c6_w.png" />
+    <Content Include="images\country-icons\c7.png" />
+    <Content Include="images\country-icons\c7_w.png" />
+    <Content Include="images\country-icons\c8.png" />
+    <Content Include="images\country-icons\c8_w.png" />
+    <Content Include="images\country-icons\c9.png" />
+    <Content Include="images\country-icons\c9_w.png" />
+    <Content Include="images\Drink.png" />
+    <Content Include="images\flight.png" />
+    <Content Include="images\flights\01.jpg" />
+    <Content Include="images\flights\02.jpg" />
+    <Content Include="images\flights\03.jpg" />
+    <Content Include="images\flights\04.jpg" />
+    <Content Include="images\flights\05.jpg" />
+    <Content Include="images\flights\06.jpg" />
+    <Content Include="images\flights\flags\01.png" />
+    <Content Include="images\flights\flags\02.png" />
+    <Content Include="images\flights\flags\03.png" />
+    <Content Include="images\flights\flags\04.png" />
+    <Content Include="images\flights\flags\05.png" />
+    <Content Include="images\flights\flags\06.png" />
+    <Content Include="images\flights\Take\Landing.png" />
+    <Content Include="images\flights\Take\take-off.png" />
+    <Content Include="images\fly-banner.jpg" />
+    <Content Include="images\foot-banner1.png" />
+    <Content Include="images\foot-banner2.png" />
+    <Content Include="images\foot-banner3.png" />
+    <Content Include="images\foot-logo.png" />
+    <Content Include="images\g1.jpg" />
+    <Content Include="images\g10.jpg" />
+    <Content Include="images\g2.jpg" />
+    <Content Include="images\g3.jpg" />
+    <Content Include="images\g4.jpg" />
+    <Content Include="images\g5.jpg" />
+    <Content Include="images\g6.jpg" />
+    <Content Include="images\g7.jpg" />
+    <Content Include="images\g8.jpg" />
+    <Content Include="images\g9.jpg" />
+    <Content Include="images\gallery-icon\icon1-hover.png" />
+    <Content Include="images\gallery-icon\icon1.png" />
+    <Content Include="images\gallery-icon\icon4-hover.png" />
+    <Content Include="images\gallery-icon\icon4.png" />
+    <Content Include="images\gallery-icon\icon5-hover.png" />
+    <Content Include="images\gallery-icon\icon5.png" />
+    <Content Include="images\gallery\g1.jpg" />
+    <Content Include="images\gallery\g2.jpg" />
+    <Content Include="images\gallery\g3.jpg" />
+    <Content Include="images\gallery\g4.jpg" />
+    <Content Include="images\gallery\g5.jpg" />
+    <Content Include="images\gallery\g6.jpg" />
+    <Content Include="images\gallery\g7.jpg" />
+    <Content Include="images\gallery\g8.jpg" />
+    <Content Include="images\gallery\loading.png" />
+    <Content Include="images\golf.png" />
+    <Content Include="images\gym.png" />
+    <Content Include="images\h1.jpg" />
+    <Content Include="images\h2.jpg" />
+    <Content Include="images\h3.jpg" />
+    <Content Include="images\h4.jpg" />
+    <Content Include="images\h5.jpg" />
+    <Content Include="images\h6.jpg" />
+    <Content Include="images\header2\b1.jpg" />
+    <Content Include="images\header2\b2.jpg" />
+    <Content Include="images\header2\b3.jpg" />
+    <Content Include="images\header2\b4.jpg" />
+    <Content Include="images\header2\b5.jpg" />
+    <Content Include="images\header2\g1.jpg" />
+    <Content Include="images\header2\g2.jpg" />
+    <Content Include="images\header2\g3.jpg" />
+    <Content Include="images\header2\g4.jpg" />
+    <Content Include="images\header2\g5.jpg" />
+    <Content Include="images\header2\g6.jpg" />
+    <Content Include="images\header2\g7.jpg" />
+    <Content Include="images\header2\g8.jpg" />
+    <Content Include="images\header2\g9.jpg" />
+    <Content Include="images\header2\pic1.jpg" />
+    <Content Include="images\header2\shop1.jpg" />
+    <Content Include="images\header2\shop2.jpg" />
+    <Content Include="images\header2\shop3.jpg" />
+    <Content Include="images\header2\shop4.jpg" />
+    <Content Include="images\header4\bg1.jpg" />
+    <Content Include="images\header4\bg2.jpg" />
+    <Content Include="images\header4\bg3.jpg" />
+    <Content Include="images\header4\image1.jpg" />
+    <Content Include="images\header4\image2.jpg" />
+    <Content Include="images\header4\image3.jpg" />
+    <Content Include="images\header4\image4.jpg" />
+    <Content Include="images\header4\image5.jpg" />
+    <Content Include="images\header4\image6.jpg" />
+    <Content Include="images\header4\image7.jpg" />
+    <Content Include="images\header4\logo1.png" />
+    <Content Include="images\header4\logo2.png" />
+    <Content Include="images\header4\logo3.png" />
+    <Content Include="images\header4\logo4.png" />
+    <Content Include="images\header4\logo5.png" />
+    <Content Include="images\header4\logo6.png" />
+    <Content Include="images\header4\thb1.jpg" />
+    <Content Include="images\header4\thb2.jpg" />
+    <Content Include="images\header4\thb3.jpg" />
+    <Content Include="images\header4\thb4.jpg" />
+    <Content Include="images\hotel.png" />
+    <Content Include="images\hotel\01.jpg" />
+    <Content Include="images\hotel\room1.jpg" />
+    <Content Include="images\hotel\room2.jpg" />
+    <Content Include="images\hotel\room3.jpg" />
+    <Content Include="images\icon-map.png" />
+    <Content Include="images\icon-map2.png" />
+    <Content Include="images\icon1.png" />
+    <Content Include="images\icon2.png" />
+    <Content Include="images\icon3.png" />
+    <Content Include="images\icon5.png" />
+    <Content Include="images\image-top.jpg" />
+    <Content Include="images\ins1.jpg" />
+    <Content Include="images\ins2.jpg" />
+    <Content Include="images\ins3.jpg" />
+    <Content Include="images\ins4.jpg" />
+    <Content Include="images\ins5.jpg" />
+    <Content Include="images\ins6.jpg" />
+    <Content Include="images\ins7.jpg" />
+    <Content Include="images\ins8.jpg" />
+    <Content Include="images\logo-3.png" />
+    <Content Include="images\logo-4.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo2.png" />
+    <Content Include="images\logo4.png" />
+    <Content Include="images\lunch.png" />
+    <Content Include="images\p001.jpg" />
+    <Content Include="images\p01.jpg" />
+    <Content Include="images\p02.jpg" />
+    <Content Include="images\p03.jpg" />
+    <Content Include="images\p1.jpg" />
+    <Content Include="images\p2.jpg" />
+    <Content Include="images\p3.jpg" />
+    <Content Include="images\p4.jpg" />
+    <Content Include="images\p5.jpg" />
+    <Content Include="images\p6.jpg" />
+    <Content Include="images\pacake.png" />
+    <Content Include="images\package\01.jpg" />
+    <Content Include="images\package\02.jpg" />
+    <Content Include="images\package\03.jpg" />
+    <Content Include="images\pay-icon.png" />
+    <Content Include="images\pic1.png" />
+    <Content Include="images\pic2.png" />
+    <Content Include="images\place\big_img.jpg" />
+    <Content Include="images\pool.png" />
+    <Content Include="images\r01.jpg" />
+    <Content Include="images\r02.jpg" />
+    <Content Include="images\r03.jpg" />
+    <Content Include="images\rest.png" />
+    <Content Include="images\shop.png" />
+    <Content Include="images\shop\01.jpg" />
+    <Content Include="images\shop\02.jpg" />
+    <Content Include="images\shop\03.jpg" />
+    <Content Include="images\shop\04.jpg" />
+    <Content Include="images\shop\05.jpg" />
+    <Content Include="images\shop\06.jpg" />
+    <Content Include="images\shop\07.jpg" />
+    <Content Include="images\shop\08.jpg" />
+    <Content Include="images\shop\09.jpg" />
+    <Content Include="images\shop\10.jpg" />
+    <Content Include="images\shop\11.jpg" />
+    <Content Include="images\shop\12.jpg" />
+    <Content Include="images\shop\banner.jpg" />
+    <Content Include="images\shop\bigimage.jpg" />
+    <Content Include="images\shop\small1.jpg" />
+    <Content Include="images\shop\small2.jpg" />
+    <Content Include="images\shop\thumb1.jpg" />
+    <Content Include="images\shop\thumb2.jpg" />
+    <Content Include="images\shop\thumb3.jpg" />
+    <Content Include="images\slide1.jpg" />
+    <Content Include="images\sliderhome3.jpg" />
+    <Content Include="images\subscribe-bg.jpg" />
+    <Content Include="images\t1.jpg" />
+    <Content Include="images\t2.jpg" />
+    <Content Include="images\t3.jpg" />
+    <Content Include="images\t4.jpg" />
+    <Content Include="images\t5.jpg" />
+    <Content Include="images\t6.jpg" />
+    <Content Include="images\tickets.png" />
+    <Content Include="images\tour.png" />
+    <Content Include="images\tour\banner1.jpg" />
+    <Content Include="images\tour\g1.jpg" />
+    <Content Include="images\tour\g10.jpg" />
+    <Content Include="images\tour\g2.jpg" />
+    <Content Include="images\tour\g3.jpg" />
+    <Content Include="images\tour\g4.jpg" />
+    <Content Include="images\tour\g5.jpg" />
+    <Content Include="images\tour\g6.jpg" />
+    <Content Include="images\tour\g7.jpg" />
+    <Content Include="images\tour\g8.jpg" />
+    <Content Include="images\tour\g9.jpg" />
+    <Content Include="images\tour\image1.jpg" />
+    <Content Include="images\tour\img1.jpg" />
+    <Content Include="images\tour\img2.jpg" />
+    <Content Include="images\tour\img3.jpg" />
+    <Content Include="images\tour\img4.jpg" />
+    <Content Include="images\tour\pic1.jpg" />
+    <Content Include="images\tour\pic2.jpg" />
+    <Content Include="images\tour\pic3.jpg" />
+    <Content Include="images\tour\thb1.jpg" />
+    <Content Include="images\tour\thb2.jpg" />
+    <Content Include="images\tour\thb3.jpg" />
+    <Content Include="images\tour\thb4.jpg" />
+    <Content Include="images\tour\thb5.jpg" />
+    <Content Include="images\tour\thb6.jpg" />
+    <Content Include="images\tour\thb7.jpg" />
+    <Content Include="images\tour\thb8.jpg" />
+    <Content Include="images\tour\thb9.jpg" />
+    <Content Include="images\uncheck.png" />
+    <Content Include="images\video-bg.jpg" />
+    <Content Include="images\wifi.png" />
+    <Content Include="img\aboutus.jpg" />
+    <Content Include="img\favicon.jpeg" />
+    <Content Include="img\gng.jpeg" />
+    <Content Include="img\k1.jpg" />
+    <Content Include="img\k2.jpg" />
+    <Content Include="img\k3.jpg" />
+    <Content Include="img\k4.jpg" />
+    <Content Include="img\k5.jpg" />
+    <Content Include="img\k6.jpg" />
+    <Content Include="img\k8.jpg" />
+    <Content Include="img\k9.png" />
+    <Content Include="img\visalogo.png" />
+    <Content Include="js\check.js" />
+    <Content Include="js\datetimepicker\bootstrap-datetimepicker.min.css" />
+    <Content Include="js\datetimepicker\bootstrap-datetimepicker.min.js" />
+    <Content Include="js\datetimepicker\moment.js" />
+    <Content Include="js\dist\css\bootstrap-select.css" />
+    <Content Include="js\dist\js\bootstrap-select.js" />
+    <Content Include="js\internal.js" />
+    <Content Include="js\jquery.2.1.1.min.js" />
+    <Content Include="js\owl-carousel\grabbing.png" />
+    <Content Include="js\owl-carousel\owl.carousel.css" />
+    <Content Include="js\owl-carousel\owl.carousel.min.js" />
+    <Content Include="js\photo-gallery.js" />
+    <Content Include="js\preetycheble\images\uncheked.png" />
+    <Content Include="js\preetycheble\img\radio_1.html" />
+    <Content Include="js\preetycheble\img\radio_2.html" />
+    <Content Include="js\preetycheble\prettyCheckable.css" />
+    <Content Include="js\preetycheble\prettyCheckable.min.js" />
+    <Content Include="js\switcher.js" />
+    <Content Include="line-awesome\css\line-awesome.min.css" />
+    <Content Include="line-awesome\fonts\line-awesomeeb4f.svg" />
+    <Content Include="VisaStatus.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminSite1.Master.cs">
+      <DependentUpon>AdminSite1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminSite1.Master.designer.cs">
+      <DependentUpon>AdminSite1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Contact-Enquiry.aspx.cs">
+      <DependentUpon>Contact-Enquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Contact-Enquiry.aspx.designer.cs">
+      <DependentUpon>Contact-Enquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\VisaUplaod.aspx.cs">
+      <DependentUpon>VisaUplaod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\VisaUplaod.aspx.designer.cs">
+      <DependentUpon>VisaUplaod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="VisaStatus.aspx.cs">
+      <DependentUpon>VisaStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisaStatus.aspx.designer.cs">
+      <DependentUpon>VisaStatus.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site1.Master" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont914c.eot" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont914c.ttf" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont914c.woff" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont914c.woff2" />
+    <Content Include="font-awesome\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="fonts\ElegantIcons.woff" />
+    <Content Include="line-awesome\fonts\line-awesome0176.eot" />
+    <Content Include="line-awesome\fonts\line-awesomeeb4f.eot" />
+    <Content Include="line-awesome\fonts\line-awesomeeb4f.ttf" />
+    <Content Include="line-awesome\fonts\line-awesomeeb4f.woff" />
+    <Content Include="line-awesome\fonts\line-awesomeeb4f.woff2" />
+    <Content Include="Admin\AdminDesign\css\bootstrap.css.map" />
+    <Content Include="Admin\AdminDesign\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Admin\AdminDesign\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Admin\AdminDesign\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Admin\AdminSite1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Upload\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1142/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
