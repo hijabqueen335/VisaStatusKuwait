@@ -132,7 +132,7 @@
                        <table class=" table table-bordered" style="font-size:9px">
                            <thead>
                                <tr style="background-color:gold">
-                                   <th>SrNo</th>
+                                   <th>Id</th>
                                    <th>Delete</th>
                                     <th>Edit</th>
                                     <th>Name</th>
@@ -154,11 +154,11 @@
                                     <td><%#(((RepeaterItem)Container).ItemIndex+1).ToString()%></td>
                                    <td>
                                       
-                                   <asp:LinkButton ID="btnDelete" runat="server"  CommandArgument='<%#Eval("SrNo")%>' Text="Delete Packages">
+                                   <asp:LinkButton ID="btnDelete" runat="server"  CommandArgument='<%#Eval("Id")%>' Text="Delete Packages">
                                   </asp:LinkButton>
                                            </td>
                                    <td>
-                                       <asp:LinkButton ID="btnedit"  CommandArgument='<%# Eval("SrNo") %>' runat="server">Edit</asp:LinkButton></td>
+                                       <asp:LinkButton ID="btnedit"  CommandArgument='<%# Eval("Id") %>' runat="server">Edit</asp:LinkButton></td>
 
                                   
 
